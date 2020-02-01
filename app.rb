@@ -2,6 +2,7 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
   get '/reverse' do
+    binding.pry
     erb :reverse
   end
 
@@ -10,7 +11,7 @@ class App < Sinatra::Base
   end
 
   get '/friends' do
-    # Write your code here!
+    erb :friends
 
   end
 end
